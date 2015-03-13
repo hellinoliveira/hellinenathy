@@ -1,0 +1,23 @@
+.padrinhos__album div {
+    padding-left: 10px;
+    padding-right: 0px;
+}
+
+.padrinhos__album p {
+    text-align: center;
+}
+
+.padrinho_pic {
+    width: 140px;
+    height: 140px;
+    padding-top: 1em;
+    background: no-repeat;
+    background-size: 100%;
+    border-radius: 70px;
+    -webkit-border-radius: 70px;
+    -moz-border-radius: 70px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+
+}

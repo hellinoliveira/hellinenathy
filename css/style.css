@@ -6,7 +6,7 @@ body, html {
 }
 
 body {
-    font-family: "Petit Formal Script";
+    font-family: 'Titillium Web', 'Oxygen', sans-serif;
     font-size: 12px;
     color: #424242;
 }
@@ -107,7 +107,7 @@ main {
     height: 530px;
 }
 
-.hero article{
+.hero article {
     box-sizing: border-box;
     background-color: #000;
     background-color: rgba(0, 0, 0, 0.7);
@@ -132,11 +132,11 @@ main {
     text-align: center;
 }
 
-.about__noivos, .love, .padrinhos {
-    font-family: 'Titillium Web', 'Oxygen', sans-serif;
+.header__title, .description {
+    font-family: "Petit Formal Script";
 }
 
-.about__noivos h3, .padrinhos h3, .love h3 {
+.about__noivos h3, .padrinhos h3, .love h3, .casamento-title{
     font-size: 3em;
     text-align: center;
 }
@@ -150,162 +150,53 @@ main {
  * Padrinhos
  *
  */
-.padrinhos__album  {
+.padrinhos__album {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
 }
-.padrinhos__album div{
-    padding-right: 20px;
+
+.padrinhos__album div {
+    padding-left: 20px;
+    padding-right: 0px;
 }
 
-.padrinhos__album p{
+.padrinhos__album p {
     text-align: center;
 }
 
 .padrinho_pic {
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
     padding-top: 1em;
     background: no-repeat;
     background-size: 100%;
-}
-
-.padrinho_pic {
-    border-radius: 65px;
-    -webkit-border-radius: 60px;
-    -moz-border-radius: 60px;
+    border-radius: 75px;
+    -webkit-border-radius: 75px;
+    -moz-border-radius: 75px;
     box-shadow: 0 0 8px rgba(0, 0, 0, .8);
     -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
     -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-}
 
-.scores__table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-.scores__table th,
-.scores__table td {
-    padding: 1em;
-}
-
-.scores__table th {
-    color: #fff;
-    font-weight: 300;
-    background-color: #78909C;
-}
-
-.scores__table tr:nth-child(odd) td {
-    background-color: #fff;
-}
-
-.scores__table tr:nth-child(even) td {
-    background-color: #eceff1;
-}
-
-.scores__table td.winner {
-    font-weight: bold;
-}
-
-.scores__table td:nth-child(3) {
-    text-align: right;
-}
-
-.scores__table td:nth-child(2),
-.scores__table td:nth-child(5) {
-    text-align: center;
 }
 
 /*
- *
- * Weather
- *
- */
-
-.weather {
-    float: right;
-    width: 320px;
-    padding: 1em;
-}
-
-.weather__location {
-    display: block;
-    font-weight: 300;
-    font-size: 1.5em;
-}
-
-.weather__desc {
-    display: block;
-    font-size: 1.2em;
-}
-
-.weather__today {
-    width: 60%;
-    vertical-align: middle;
-}
-
-.weather__today__image {
-    vertical-align: middle
-}
-
-.weather__today__temp {
-    font-size: 3em;
-}
-
-.weather__today__deg {
-    font-size: 2em;
-    display: inline;
-}
-
-.weather__next__item {
-    display: inline-block;
-    width: 20%;
-    text-align: center;
-}
-
-.weather__next__item span {
-    display: block;
-}
-
-.weather__next__image {
+*
+* Cerimônia
+*/
+.casamento{
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
-
-/*
- *
- * Weather
- *
- */
-
-.recent-news {
-    clear: both;
-    padding: 1em;
+.casamento div{
+    padding-left: 30px;
+    width: 280px;
 }
-
-.snippet {
-    clear: both;
-    margin: 24px 0;
-}
-
-.snippet__thumbnail {
-    width: 100px;
-    float: left;
-    margin-right: 1em;
-}
-
-.snippet__title {
-    font-weight: 500;
-}
-
-.snippet__title a {
-    text-decoration: none;
-    color: #666;
-}
-
-.snippet__title a:hover,
-.snippet__title a:active {
-    text-decoration: underline;
+.casamento img{
+    width:150px;
+    display: block;
+    margin: 0 auto;
 }
 
 /*
