@@ -75,44 +75,6 @@ ul {
 
 /*
  *
- * Top Level Navigation
- *
- */
-
-.nav {
-    width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.nav__list {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-}
-
-.nav__item {
-    box-sizing: border-box;
-    display: inline-block;
-    width: 24%;
-    text-align: center;
-    line-height: 24px;
-    padding: 24px;
-    text-transform: uppercase;
-}
-
-.nav a {
-    text-decoration: none;
-    color: #616161;
-}
-
-.nav a:hover {
-    text-decoration: underline;
-    color: #212121;
-}
-
-/*
- *
  * Main
  *
  */
@@ -145,7 +107,7 @@ main {
     height: 530px;
 }
 
-.hero article {
+.hero article{
     box-sizing: border-box;
     background-color: #000;
     background-color: rgba(0, 0, 0, 0.7);
@@ -164,70 +126,58 @@ main {
  * noivos
  *
  */
-.about__noivos{
+.about__noivos {
     width: 100%;
     display: inline-block;
     text-align: center;
 }
-.about__noivos, .love {
+
+.about__noivos, .love, .padrinhos {
     font-family: 'Titillium Web', 'Oxygen', sans-serif;
 }
-.about__noivos h3{
+
+.about__noivos h3, .padrinhos h3, .love h3 {
     font-size: 3em;
+    text-align: center;
 }
 
-.about__noivos h4{
+.about__noivos h4 {
     font-size: 2em;
-}
-.top-news {
-    float: right;
-    width: 320px;
-    height: 300px;
-    border-bottom: 1px solid #E0E0E0;
-    padding: 1em;
-}
-
-.news__title {
-    font-weight: 300;
-    border-bottom: 1px solid #E0E0E0;
-    line-height: 24px;
-    font-size: 16px;
-}
-
-.top-news__item {
-    border-bottom: 1px solid #E0E0E0;
-    padding: 1em 0;
-    line-height: 19.2px;
-}
-
-.top-news__item:before {
-    content: "» ";
-}
-
-.top-news__item:last-child {
-    border-bottom: none;
-}
-
-.top-news__item a {
-    text-decoration: none;
-    color: #666;
-}
-
-.top-news__item a:hover,
-.top-news__item a:active {
-    text-decoration: underline;
 }
 
 /*
  *
- * Sport Scores
+ * Padrinhos
  *
  */
+.padrinhos__album  {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.padrinhos__album div{
+    padding-right: 20px;
+}
 
-.scores {
-    width: 480px;
-    float: left;
+.padrinhos__album p{
+    text-align: center;
+}
+
+.padrinho_pic {
+    width: 120px;
+    height: 120px;
     padding-top: 1em;
+    background: no-repeat;
+    background-size: 100%;
+}
+
+.padrinho_pic {
+    border-radius: 65px;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 }
 
 .scores__table {
