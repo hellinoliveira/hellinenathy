@@ -136,7 +136,7 @@ main {
     font-family: "Petit Formal Script";
 }
 
-.about__noivos h3, .padrinhos h3, .love h3, .casamento-title{
+.about__noivos h3, .padrinhos h3, .love h3, .casamento-title {
     font-size: 3em;
     text-align: center;
 }
@@ -184,17 +184,19 @@ main {
 *
 * Cerimônia
 */
-.casamento{
+.casamento {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
 }
-.casamento div{
+
+.casamento div {
     padding-left: 30px;
     width: 100%;
 }
-.casamento img{
-    width:150px;
+
+.casamento img {
+    width: 150px;
     display: block;
     margin: 0 auto;
 }
@@ -204,16 +206,18 @@ main {
  * Lojas
  *
  */
-.presentes__logo{
+.presentes__logo {
     height: 60px;
     width: 60px;
 }
-.lojas_container{
+
+.lojas_container {
     width: 150px;
     height: 80px;
 
 }
-.lojas{
+
+.lojas {
     width: 100%;
     height: 100%;
     display: block;
@@ -222,15 +226,58 @@ main {
 footer {
     border-top: 1px solid #E0E0E0;
     padding: 1em;
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
 }
-
+footer ul{
+    margin: 0 auto;
+    text-align: center;
+}
 footer li {
     display: inline-block;
     margin: 0 1em;
+    /*width: 150px;*/
 }
 
 footer a {
     text-decoration: none;
     color: #333;
+    text-align: center;
+}
+
+.ig-b- {
+    display: inline-block;
+}
+
+.ig-b- img {
+    visibility: hidden;
+}
+
+.ig-b-:hover {
+    background-position: 0 -60px;
+}
+
+.ig-b-:active {
+    background-position: 0 -120px;
+}
+.inbox{
+    width: 48px;
+    height: 48px;
+    background: url("../images/17454-200.png") no-repeat scroll 0 0 / 48px auto rgba(0, 0, 0, 0);
+}
+.inbox:hover{
+    background-position: 0 0;
+    transform: rotate(20deg);
+}
+.ig-b-48 {
+    width: 48px;
+    height: 48px;
+    background: url(//badges.instagram.com/static/images/ig-badge-sprite-48.png) no-repeat 0 0;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+    .ig-b-48 {
+        background-image: url(//badges.instagram.com/static/images/ig-badge-sprite-48@2x.png);
+        background-size: 60px 178px;
+    }
 }
