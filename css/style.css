@@ -102,9 +102,13 @@ main {
     float: left;
     width: 100%;
     position: relative;
-    background: url("../images/kiss_waterfall_HD.jpg") bottom center no-repeat;
-    background-size: cover;
+    background: url("../images/kiss_waterfall.jpg") bottom center /cover no-repeat;
     height: 530px;
+}
+@media screen and (min-width: 800px) {
+    .hero{
+        background: url("../images/kiss_waterfall_HD.jpg") center center /cover no-repeat;
+    }
 }
 
 .hero article {

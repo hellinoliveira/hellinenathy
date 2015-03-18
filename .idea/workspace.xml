@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2551d56d-4a6b-4063-a2a5-48b021459d5d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
     </list>
     <ignored path="hellinenathy.iws" />
@@ -26,10 +25,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="284" column="86" selection-start="11218" selection-end="11218" vertical-scroll-proportion="0.8168224" vertical-offset="4391" max-vertical-offset="5032">
+            <state line="284" column="86" selection-start="11218" selection-end="11218" vertical-scroll-proportion="-8.568627" vertical-offset="4391" max-vertical-offset="5032">
               <folding />
             </state>
           </provider>
@@ -44,10 +43,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="254" column="1" selection-start="3439" selection-end="3439" vertical-scroll-proportion="0.0" vertical-offset="4102" max-vertical-offset="4913">
+            <state line="109" column="65" selection-start="1470" selection-end="1470" vertical-scroll-proportion="0.5095986" vertical-offset="1561" max-vertical-offset="4981">
               <folding />
             </state>
           </provider>
@@ -90,8 +89,8 @@
         <option value="$PROJECT_DIR$/js/fb.js" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/css/styleSmall.css" />
-        <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/css/style.css" />
       </list>
     </option>
   </component>
@@ -424,16 +423,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="254" column="1" selection-start="3439" selection-end="3439" vertical-scroll-proportion="0.0" vertical-offset="4102" max-vertical-offset="4913">
+        <state line="284" column="86" selection-start="11218" selection-end="11218" vertical-scroll-proportion="-8.568627" vertical-offset="4391" max-vertical-offset="5032">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="284" column="86" selection-start="11218" selection-end="11218" vertical-scroll-proportion="0.8168224" vertical-offset="4391" max-vertical-offset="5032">
+        <state line="109" column="65" selection-start="1470" selection-end="1470" vertical-scroll-proportion="0.5095986" vertical-offset="1561" max-vertical-offset="4981">
           <folding />
         </state>
       </provider>
