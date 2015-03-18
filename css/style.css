@@ -191,7 +191,7 @@ main {
 }
 .casamento div{
     padding-left: 30px;
-    width: 280px;
+    width: 100%;
 }
 .casamento img{
     width:150px;
@@ -201,9 +201,23 @@ main {
 
 /*
  *
- * Footer
+ * Lojas
  *
  */
+.presentes__logo{
+    height: 60px;
+    width: 60px;
+}
+.lojas_container{
+    width: 150px;
+    height: 80px;
+
+}
+.lojas{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
 
 footer {
     border-top: 1px solid #E0E0E0;
