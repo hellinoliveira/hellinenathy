@@ -5,6 +5,7 @@ body, html {
     height: 100%;
 }
 
+
 body {
     font-family: 'Titillium Web', 'Oxygen', sans-serif;
     font-size: 12px;
@@ -15,7 +16,7 @@ h1, h2, h3, h4, h5 {
     margin: 0;
 }
 
-header, nav, footer, section, article, div {
+header, nav, .footer, section, article, div {
     box-sizing: border-box;
 }
 
@@ -45,7 +46,7 @@ ul {
  */
 
 .header {
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+
     min-height: 56px;
     transition: min-height 0.3s;
 }
@@ -54,6 +55,7 @@ ul {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+    background-color: #6E0E0E;
 }
 
 .header__logo {
@@ -64,11 +66,11 @@ ul {
 }
 
 .header__title {
+    color: #ffffff;
     font-weight: 300;
     font-size: 4em;
     margin: 0.5em 0.25em;
     display: inline-block;
-    color: #212121;
     width: 90%;
     text-align: center;
 }
@@ -86,6 +88,7 @@ main {
     margin-right: auto;
 }
 
+
 /*
  *
  * Content
@@ -99,19 +102,17 @@ main {
  */
 
 .hero {
-    float: left;
     width: 100%;
     position: relative;
     background: url("../images/kiss_waterfall.jpg") bottom center /cover no-repeat;
     height: 530px;
 }
-@media screen and (min-width: 800px) {
-    .hero{
-        background: url("../images/kiss_waterfall_HD.jpg") center center /cover no-repeat;
-    }
+
+.getting__marriage {
+    display: none;
 }
 
-.hero article {
+.caption {
     box-sizing: border-box;
     background-color: #000;
     background-color: rgba(0, 0, 0, 0.7);
@@ -131,9 +132,9 @@ main {
  *
  */
 .about__noivos {
-    width: 100%;
     display: inline-block;
     text-align: center;
+    width: 100%;
 }
 
 .header__title, .description {
@@ -149,11 +150,25 @@ main {
     font-size: 2em;
 }
 
+.love{
+    padding-bottom: 20px;
+}
+.love, .about__noivos{
+    color: #ffffff;
+    background-color: #6E0E0E;
+}
+.love p, .about__noivos p{
+    text-align: center;
+    font-size: 1.4em;
+}
 /*
  *
  * Padrinhos
  *
  */
+.padrinhos{
+    background-color: #E1F5C4;
+}
 .padrinhos__album {
     display: flex;
     flex-wrap: wrap;
@@ -164,6 +179,8 @@ main {
     padding-left: 20px;
     padding-right: 0px;
 }
+
+
 
 .padrinhos__album p {
     text-align: center;
@@ -181,29 +198,91 @@ main {
     box-shadow: 0 0 8px rgba(0, 0, 0, .8);
     -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
     -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
 
+
+}
+
+.padrinho_pic:hover {
+    -webkit-transform:scale(1.5); /* prefixo para browsers webkit */
+    -moz-transform:scale(1.5); /* prefixo para browsers gecko */
+    -o-transform:scale(1.5); /* prefixo para opera */
+    transform:scale(1.5);
 }
 
 /*
 *
 * Cerimônia
 */
-.casamento {
+
+.casamento, .presentes {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
 }
 
-.casamento div {
+.casamento__container{
+    background-color: #EDE574;
+}
+
+.casamento div, .presente{
     padding-left: 30px;
     width: 100%;
 }
 
-.casamento img {
+.casamento img, .presente img{
     width: 150px;
     display: block;
     margin: 0 auto;
 }
+
+.lg-only{
+    display: none;
+}
+#casamento__local{
+    padding-left: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+#casamento__local div{
+    width: 50%;
+}
+#casamento__local div img{
+    width: 100%;
+}
+/*.casamento__localizacao{*/
+    /*border-radius: 50%;*/
+    /*-webkit-border-radius: 50%;*/
+    /*-moz-border-radius: 50%;*/
+    /*box-shadow: 0 0 8px rgba(0, 0, 0, .8);*/
+    /*-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);*/
+    /*-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);*/
+    /*-webkit-transition: 0.5s ease-in-out;*/
+    /*-moz-transition: 0.5s ease-in-out;*/
+    /*-o-transition: 0.5s ease-in-out;*/
+    /*transition: 0.5s ease-in-out;*/
+
+/*}*/
+
+/*#mask {*/
+    /*overflow: hidden;*/
+    /*border-radius: 50%;*/
+    /*position: relative;*/
+    /*z-index: 99;*/
+    /*height: 100%;*/
+    /*width: 100%;*/
+/*}*/
+
+/*#mask iframe {*/
+    /*position: absolute;*/
+    /*border-radius: 50%;*/
+    /*top: 0; left: 0;*/
+    /*z-index: 50;*/
+/*}*/
 
 /*
  *
@@ -215,11 +294,6 @@ main {
     width: 60px;
 }
 
-.lojas_container {
-    width: 150px;
-    height: 80px;
-
-}
 
 .lojas {
     width: 100%;
@@ -227,24 +301,27 @@ main {
     display: block;
 }
 
-footer {
+.footer {
+    background-color: #E5FCC2;
     border-top: 1px solid #E0E0E0;
     padding: 1em;
     display: flex;
     flex-wrap: wrap;
     width: 100%;
 }
-footer ul{
+
+.footer ul {
     margin: 0 auto;
     text-align: center;
 }
-footer li {
+
+.footer li {
     display: inline-block;
-    margin: 0 1em;
+    margin: 0 6px;
     /*width: 150px;*/
 }
 
-footer a {
+.footer a {
     text-decoration: none;
     color: #333;
     text-align: center;
@@ -265,23 +342,203 @@ footer a {
 .ig-b-:active {
     background-position: 0 -120px;
 }
-.inbox{
+
+.inbox {
     width: 48px;
     height: 48px;
     background: url("../images/17454-200.png") no-repeat scroll 0 0 / 48px auto rgba(0, 0, 0, 0);
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
 }
-.inbox:hover{
+
+.inbox:hover, .maps:hover {
     background-position: 0 0;
     transform: rotate(20deg);
 }
+.maps{
+    width: 48px;
+    height: 52px;
+    background: url("../images/Google_Maps_Icon.png") no-repeat scroll 0 0 / 48px auto rgba(0, 0, 0, 0);
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+}
+
 .ig-b-48 {
     width: 48px;
     height: 48px;
     background: url(//badges.instagram.com/static/images/ig-badge-sprite-48.png) no-repeat 0 0;
 }
+
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
     .ig-b-48 {
         background-image: url(//badges.instagram.com/static/images/ig-badge-sprite-48@2x.png);
         background-size: 60px 178px;
     }
+}
+
+@media screen and (min-width: 710px) {
+    .padrinhos__album div {
+        margin: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .about__noivos h4 {
+        font-size: 1.6em;
+    }
+
+    .about {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .about__noivos {
+        width: 50%;
+    }
+    .about__noivos p, .about__noivos h4 {
+     margin: 1em;
+    }
+    .about__noivos p{
+        text-align: inherit;
+    }
+    .noivo,.noivo h3{
+        text-align: right;
+    }
+    .noivo h3{
+        margin-right: 16px;
+    }
+    .noiva, .noiva h3 {
+        text-align: left;
+    }
+    .noiva h3{
+        margin-left: 16px;
+    }
+
+    .getting__marriage {
+        display: inline-block;
+    }
+
+    .casamento div, .presente {
+        width: 33%;
+    }
+
+    .header__title {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+}
+
+@media screen and (min-width: 800px) {
+    .hero {
+        width: inherit;
+        position: inherit;
+        height: inherit;
+        background: url("../images/kiss_waterfall_HD.jpg") center center /cover no-repeat;
+    }
+
+    .about__noivos h4 {
+        font-size: 2em;
+    }
+    .lg-only{
+        display: inline-block;
+    }
+    /* full width/height container */
+    #slides-container {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    /* double the height/width of a viewport */
+    #slides {
+        width: 200%;
+        height: 200%;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    .slide {
+        position:absolute;
+        top:0;
+        left:0;
+        width:50%;
+        height:50%;
+    }
+    #slide-1 {
+        /*background: url('../img/bcg_slide-1.jpg') no-repeat center center;*/
+        /*background-size: cover;*/
+    }
+    #slide-2 {
+        /*background: url('../img/bcg_slide-2.jpg') no-repeat center center;*/
+        background-size: cover;
+        -webkit-transform: translate(0,100%);
+        -ms-transform: translate(0,100%);
+        transform: translate(0,100%);
+    }
+    #slide-3 {
+        /*background: url('../img/bcg_slide-3.jpg') no-repeat center center;*/
+        background-size: cover;
+        -webkit-transform: translate(0,200%);
+        -ms-transform: translate(0,200%);
+        transform: translate(0,200%);
+    }
+    #slide-3 .caption {
+        left: 5%;
+        right: auto;
+        color: #47373f;
+    }
+    #slide-4 {
+        /*background: url('../img/bcg_slide-4.jpg') no-repeat center center;*/
+        background-size: cover;
+        -webkit-transform: translate(0,300%);
+        -ms-transform: translate(0,300%);
+        transform: translate(0,300%);
+    }
+    #slide-4 .caption {
+        right: auto;
+        left: 5%;
+        top: 5%;
+        bottom: auto;
+        color: #47373f;
+    }
+    #slide-5{
+        -webkit-transform: translate(0,400%);
+        -ms-transform: translate(0,400%);
+        transform: translate(0,400%);
+    }
+    #helper {
+        position:absolute;
+        left:0;
+        top: 0;
+        height:600%;
+        width: 0;
+    }
+    .marker {
+        height: 25%;
+        width: 100%;
+    }
+    .red {
+        background-color: red;
+    }
+    .green {
+        background-color: green;
+    }
+    .blue {
+        background-color: blue;
+    }
+    .yellow {
+        background-color: yellow;
+    }
+}
+@media screen and (min-width: 620px) and (max-width: 696px) {
+    .padrinhos__album div {
+        padding-left: 50px;
+    }
+
 }
