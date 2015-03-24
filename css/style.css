@@ -91,13 +91,7 @@ main {
 
 /*
  *
- * Content
- *
- */
-
-/*
- *
- * Hero
+ * content
  *
  */
 
@@ -202,8 +196,6 @@ main {
     -moz-transition: 0.5s ease-in-out;
     -o-transition: 0.5s ease-in-out;
     transition: 0.5s ease-in-out;
-
-
 }
 
 .padrinho_pic:hover {
@@ -217,7 +209,9 @@ main {
 *
 * Cerimônia
 */
-
+.full__center{
+    width: 100%; text-align: center;
+}
 .casamento, .presentes {
     width: 100%;
     display: flex;
