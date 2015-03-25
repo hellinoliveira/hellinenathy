@@ -5,7 +5,6 @@ body, html {
     height: 100%;
 }
 
-
 body {
     font-family: 'Titillium Web', 'Oxygen', sans-serif;
     font-size: 12px;
@@ -88,7 +87,6 @@ main {
     margin-right: auto;
 }
 
-
 /*
  *
  * content
@@ -144,25 +142,29 @@ main {
     font-size: 2em;
 }
 
-.love{
+.love {
     padding-bottom: 20px;
 }
-.love, .about__noivos{
+
+.love, .about__noivos {
     color: #ffffff;
     background-color: #6E0E0E;
 }
-.love p, .about__noivos p{
+
+.love p, .about__noivos p {
     text-align: center;
     font-size: 1.4em;
 }
+
 /*
  *
  * Padrinhos
  *
  */
-.padrinhos{
+.padrinhos {
     background-color: #E1F5C4;
 }
+
 .padrinhos__album {
     display: flex;
     flex-wrap: wrap;
@@ -173,8 +175,6 @@ main {
     padding-left: 20px;
     padding-right: 0px;
 }
-
-
 
 .padrinhos__album p {
     text-align: center;
@@ -199,83 +199,89 @@ main {
 }
 
 .padrinho_pic:hover {
-    -webkit-transform:scale(1.5); /* prefixo para browsers webkit */
-    -moz-transform:scale(1.5); /* prefixo para browsers gecko */
-    -o-transform:scale(1.5); /* prefixo para opera */
-    transform:scale(1.5);
+    -webkit-transform: scale(1.5); /* prefixo para browsers webkit */
+    -moz-transform: scale(1.5); /* prefixo para browsers gecko */
+    -o-transform: scale(1.5); /* prefixo para opera */
+    transform: scale(1.5);
 }
 
 /*
 *
 * Cerimônia
 */
-.full__center{
-    width: 100%; text-align: center;
+.full__center {
+    width: 100%;
+    text-align: center;
 }
+
 .casamento, .presentes {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
 }
 
-.casamento__container{
+.casamento__container {
     background-color: #EDE574;
 }
 
-.casamento div, .presente{
+.casamento div, .presente {
     padding-left: 30px;
     width: 100%;
 }
 
-.casamento img, .presente img{
+.casamento img, .presente img {
     width: 150px;
     display: block;
     margin: 0 auto;
 }
 
-.lg-only{
+.lg-only {
     display: none;
 }
-#casamento__local{
+
+#casamento__local {
     padding-left: 0;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
 }
-#casamento__local div{
+
+#casamento__local div {
     width: 50%;
 }
-#casamento__local div img{
+
+#casamento__local div img {
     width: 100%;
 }
+
 /*.casamento__localizacao{*/
-    /*border-radius: 50%;*/
-    /*-webkit-border-radius: 50%;*/
-    /*-moz-border-radius: 50%;*/
-    /*box-shadow: 0 0 8px rgba(0, 0, 0, .8);*/
-    /*-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);*/
-    /*-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);*/
-    /*-webkit-transition: 0.5s ease-in-out;*/
-    /*-moz-transition: 0.5s ease-in-out;*/
-    /*-o-transition: 0.5s ease-in-out;*/
-    /*transition: 0.5s ease-in-out;*/
+/*border-radius: 50%;*/
+/*-webkit-border-radius: 50%;*/
+/*-moz-border-radius: 50%;*/
+/*box-shadow: 0 0 8px rgba(0, 0, 0, .8);*/
+/*-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);*/
+/*-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);*/
+/*-webkit-transition: 0.5s ease-in-out;*/
+/*-moz-transition: 0.5s ease-in-out;*/
+/*-o-transition: 0.5s ease-in-out;*/
+/*transition: 0.5s ease-in-out;*/
 
 /*}*/
 
 /*#mask {*/
-    /*overflow: hidden;*/
-    /*border-radius: 50%;*/
-    /*position: relative;*/
-    /*z-index: 99;*/
-    /*height: 100%;*/
-    /*width: 100%;*/
+/*overflow: hidden;*/
+/*border-radius: 50%;*/
+/*position: relative;*/
+/*z-index: 99;*/
+/*height: 100%;*/
+/*width: 100%;*/
 /*}*/
 
 /*#mask iframe {*/
-    /*position: absolute;*/
-    /*border-radius: 50%;*/
-    /*top: 0; left: 0;*/
-    /*z-index: 50;*/
+/*position: absolute;*/
+/*border-radius: 50%;*/
+/*top: 0; left: 0;*/
+/*z-index: 50;*/
 /*}*/
 
 /*
@@ -288,7 +294,6 @@ main {
     width: 60px;
 }
 
-
 .lojas {
     width: 100%;
     height: 100%;
@@ -298,7 +303,6 @@ main {
 .footer {
     background-color: #E5FCC2;
     border-top: 1px solid #E0E0E0;
-    padding: 1em;
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -312,7 +316,6 @@ main {
 .footer li {
     display: inline-block;
     margin: 0 6px;
-    /*width: 150px;*/
 }
 
 .footer a {
@@ -337,28 +340,31 @@ main {
     background-position: 0 -120px;
 }
 
-.inbox {
+.icons {
     width: 48px;
     height: 48px;
-    background: url("../images/17454-200.png") no-repeat scroll 0 0 / 48px auto rgba(0, 0, 0, 0);
     -webkit-transition: 0.5s ease-in-out;
     -moz-transition: 0.5s ease-in-out;
     -o-transition: 0.5s ease-in-out;
     transition: 0.5s ease-in-out;
 }
 
-.inbox:hover, .maps:hover {
-    background-position: 0 0;
-    transform: rotate(20deg);
+.inbox {
+    background: url("../images/inbox.png") no-repeat scroll 0 0 / 48px auto rgba(0, 0, 0, 0);
 }
-.maps{
-    width: 48px;
+
+.maps {
     height: 52px;
     background: url("../images/Google_Maps_Icon.png") no-repeat scroll 0 0 / 48px auto rgba(0, 0, 0, 0);
-    -webkit-transition: 0.5s ease-in-out;
-    -moz-transition: 0.5s ease-in-out;
-    -o-transition: 0.5s ease-in-out;
-    transition: 0.5s ease-in-out;
+}
+.presenca{
+    background: url("../images/presence.png") no-repeat scroll 0 0 / 48px auto rgba(0, 0, 0, 0);
+    border-radius: 6px;
+}
+
+.inbox:hover, .maps:hover, .presenca:hover {
+    background-position: 0 0;
+    transform: rotate(20deg);
 }
 
 .ig-b-48 {
@@ -380,6 +386,7 @@ main {
         padding-left: 20px;
         padding-right: 20px;
     }
+
     .about__noivos h4 {
         font-size: 1.6em;
     }
@@ -393,22 +400,28 @@ main {
     .about__noivos {
         width: 50%;
     }
+
     .about__noivos p, .about__noivos h4 {
-     margin: 1em;
+        margin: 1em;
     }
-    .about__noivos p{
+
+    .about__noivos p {
         text-align: inherit;
     }
-    .noivo,.noivo h3{
+
+    .noivo, .noivo h3 {
         text-align: right;
     }
-    .noivo h3{
+
+    .noivo h3 {
         margin-right: 16px;
     }
+
     .noiva, .noiva h3 {
         text-align: left;
     }
-    .noiva h3{
+
+    .noiva h3 {
         margin-left: 16px;
     }
 
@@ -439,9 +452,11 @@ main {
     .about__noivos h4 {
         font-size: 2em;
     }
-    .lg-only{
+
+    .lg-only {
         display: inline-block;
     }
+
     /* full width/height container */
     #slides-container {
         width: 100%;
@@ -457,43 +472,49 @@ main {
         top: 0;
         left: 0;
     }
+
     .slide {
-        position:absolute;
-        top:0;
-        left:0;
-        width:50%;
-        height:50%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 50%;
     }
+
     #slide-1 {
         /*background: url('../img/bcg_slide-1.jpg') no-repeat center center;*/
         /*background-size: cover;*/
     }
+
     #slide-2 {
         /*background: url('../img/bcg_slide-2.jpg') no-repeat center center;*/
         background-size: cover;
-        -webkit-transform: translate(0,100%);
-        -ms-transform: translate(0,100%);
-        transform: translate(0,100%);
+        -webkit-transform: translate(0, 100%);
+        -ms-transform: translate(0, 100%);
+        transform: translate(0, 100%);
     }
+
     #slide-3 {
         /*background: url('../img/bcg_slide-3.jpg') no-repeat center center;*/
         background-size: cover;
-        -webkit-transform: translate(0,200%);
-        -ms-transform: translate(0,200%);
-        transform: translate(0,200%);
+        -webkit-transform: translate(0, 200%);
+        -ms-transform: translate(0, 200%);
+        transform: translate(0, 200%);
     }
+
     #slide-3 .caption {
         left: 5%;
         right: auto;
         color: #47373f;
     }
+
     #slide-4 {
-        /*background: url('../img/bcg_slide-4.jpg') no-repeat center center;*/
         background-size: cover;
-        -webkit-transform: translate(0,300%);
-        -ms-transform: translate(0,300%);
-        transform: translate(0,300%);
+        -webkit-transform: translate(0, 300%);
+        -ms-transform: translate(0, 300%);
+        transform: translate(0, 300%);
     }
+
     #slide-4 .caption {
         right: auto;
         left: 5%;
@@ -501,38 +522,74 @@ main {
         bottom: auto;
         color: #47373f;
     }
-    #slide-5{
-        -webkit-transform: translate(0,400%);
-        -ms-transform: translate(0,400%);
-        transform: translate(0,400%);
+
+    #slide-5 {
+        background-size: cover;
+        -webkit-transform: translate(0, 400%);
+        -ms-transform: translate(0, 400%);
+        transform: translate(0, 400%);
     }
+
     #helper {
-        position:absolute;
-        left:0;
+        position: absolute;
+        left: 0;
         top: 0;
-        height:600%;
+        height: 600%;
         width: 0;
     }
+
     .marker {
-        height: 25%;
+        height: 20%;
         width: 100%;
     }
+
     .red {
         background-color: red;
     }
+
     .green {
         background-color: green;
     }
+
     .blue {
         background-color: blue;
     }
+
     .yellow {
         background-color: yellow;
     }
 }
+
 @media screen and (min-width: 620px) and (max-width: 696px) {
     .padrinhos__album div {
         padding-left: 50px;
     }
 
+}
+
+video {
+    position: fixed;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
+    background-size: cover;
+    transition: 1s opacity;
+}
+
+#contato {
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 100;
+    padding: 2rem;
+    margin: 2rem;
+    width: 100%;
+}
+#contato div{
+    width: 50%;
+    float: right;
 }
