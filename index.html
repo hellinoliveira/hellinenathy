@@ -265,12 +265,12 @@
                     <div class="full__center">
                         <h4>Lista de Presentes</h4>
 
-                        <p>Ficariamos honrados em receber presentes de pessoas tão especiais, elaboramos 3 listas com
+                        <p style="font-size: 15px;">Ficariamos honrados em receber presentes de pessoas tão especiais, elaboramos 3 listas com
                             opções variadas.
                             Para visualizar, basta clicar nas imagens abaixo.</p>
                     </div>
                     <div class="presente">
-                        <img src="images/pf26983959.png" alt="logo ponto frio">
+                        <img src="images/pontofrio.jpg" alt="logo ponto frio">
                         <a target="_blank"
                            href="http://www.pontofrio.com.br/Site/ListaGerenciadaLandingPage.aspx?idListaCompra=436188"
                            class="lojas"></a>
@@ -280,13 +280,13 @@
                         <a target="_blank" href="http://instagram.com/hlteodoro" class="lojas"></a>
                     </div>
                     <div class="presente">
-                        <img src="images/goianita.png" alt="logo magazineluiza">
+                        <img src="images/mgluiza.jpg" alt="logo magazineluiza">
                         <a target="_blank" href="https://www.querodecasamento.com.br/lista-de-casamento/hellinenathy/"
                            class="lojas"></a>
                     </div>
                 </div>
                 <div class="casamento">
-                    <h4 class="full__center">Lista de Presentes</h4><br>
+                    <h4 class="lg-only full__center">Cerimônia</h4><br>
 
                     <div class="casamento__ casamento__cerimonia">
                         <img src="images/5456-200.png" alt="cerimonia"/>
@@ -294,7 +294,6 @@
                         <h3>Cerimônia <span>17:30</span></h3>
                         <h4><a target="_blank" href="http://www.bellaeventosgoiania.com.br/site/"> Bella Eventos </a>
                         </h4>
-                        <!--<h5>Rua 1131, N° 208 - Setor Marista - Goiânia - GO | CEP 74180-100 </h5>-->
                         <p>O casal realizará a troca de alianças às 17:30pm.</p>
                     </div>
                     <div class="casamento__ casamento__festa">
@@ -340,12 +339,6 @@
         </section>
         <section>
             <div id="slide-5" class="slide footer">
-                <div data-100p="opacity: 0; transform:translate(400%,0);"
-                     data-300p="opacity: 1; transform:translate(0,0);"
-                     data-400p=""
-                     data-450p="opacity: 0; transform:translate(-400%,0);"
-                     data-anchor-target="#helper"
-                        >
                     <video autoplay poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvid">
                         <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
                         <source src="//demosthenes.info/assets/videos/polina.webm" type="video/webm">
@@ -389,22 +382,6 @@
     </div>
 </main>
 
-<!--<footer>-->
-<!--<ul>-->
-<!--<li><a href="mailto:hellison.oliveira@gmail.com" class="ig-b- inbox"></a>-->
-<!--<br>Contato-->
-<!--</li>-->
-<!--<li><a href="http://instagram.com/hlteodoro?ref=badge" target="_blank" class="ig-b- ig-b-48"></a>-->
-<!--<br>Hellison-->
-<!--</li>-->
-<!--<li><a href="http://instagram.com/nathaliamacedo__?ref=badge" target="_blank" class="ig-b- ig-b-48"></a>-->
-<!--<br>Nathália-->
-<!--</li>-->
-<!--<li><a href="https://goo.gl/maps/LzSBr" target="_blank" class="ig-b- maps"></a>-->
-<!--<br>Localização-->
-<!--</li>-->
-<!--</ul>-->
-<!--</footer>-->
 <div id="skrollr-body"></div>
 </body>
 <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
@@ -424,5 +401,11 @@
         var target2 = Math.floor(Math.random() * cards.length - 1) + 1;
         cards.eq(target).before(cards.eq(target2));
     }
+// iniciar o video com autoplay nos mobile. Porem optei por retirar do mobile
+//    var video = document.getElementById('bgvid');
+//    video.play();
+//    video.addEventListener('click',function(){
+//        video.play();
+//    },false);
 </script>
 </html>
