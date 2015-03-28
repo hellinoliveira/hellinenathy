@@ -98,11 +98,11 @@
                         muitas alegrias, viagens, shows, beijos. Sempre crescendo e levando o outro bem perto, bem ao
                         lado.</p>
                 </div>
-                <div class="caption"
+                <div class="lg-only caption"
                      data-0="opacity: 0; transform:translate(0,0);"
                      data-200="opacity: 0.5; transform:translate(-100%,180%);"
-                     data-250p="opacity: 0.8; transform:translate(-100%,-380%);"
-                     data-300p="opacity: 1; transform:translate(-100%,-480%);"
+                     data-250p="opacity: 0.8; transform:translate(-100%,-280%);"
+                     data-300p="opacity: 1; transform:translate(-100%,-580%);"
                      data-anchor-target="#helper">
                     <img src="images/heart.png">
                 </div>
@@ -271,18 +271,16 @@
                             opções variadas.
                             Para visualizar, basta clicar nas imagens abaixo.</p>
                     </div>
-                    <div class="presente">
-                        <img src="images/pontofrio.png" alt="logo ponto frio">
+                    <div class="presente ponto-frio">
                         <a target="_blank"
                            href="http://www.pontofrio.com.br/Site/ListaGerenciadaLandingPage.aspx?idListaCompra=436188"
                            class="lojas"></a>
                     </div>
-                    <div class="presente">
-                        <img src="images/TOKSTOK.png" alt="logo tokstok">
+                    <div class="presente tokstok">
                         <a target="_blank" href="http://instagram.com/hlteodoro" class="lojas"></a>
                     </div>
-                    <div class="presente">
-                        <img src="images/www-querodecasamento-com-br.jpg" alt="logo magazineluiza">
+                    <div class="presente mgluiza">
+                        <!--<img src="images/mgluiza.jpg" alt="logo magazineluiza">-->
                         <a target="_blank" href="https://www.querodecasamento.com.br/lista-de-casamento/hellinenathy/"
                            class="lojas"></a>
                     </div>
@@ -325,7 +323,7 @@
             </div>
 
         </section>
-        <section>
+        <section class="mb-only">
             <div id="slide-5" class="slide footer">
                 <video autoplay poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvid">
                     <source src="//demosthenes.info/assets/videos/polina.webm" type="video/webm">
@@ -373,7 +371,7 @@
 <script src="js/skrollr.js"></script>
 <script type="text/javascript">
     $(document).ready(function () {
-        if ($(window).width() > 1000) {
+        if ($(window).width() > 800) {
             var s = skrollr.init();
         }
     });
