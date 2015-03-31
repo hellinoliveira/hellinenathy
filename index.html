@@ -4,12 +4,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Website in honor of our wedding">
     <link rel="author" href="https://plus.google.com/+HellisonOliveira/about"/>
-    <link rel="shortcut icon" type="image/png" href="images/images.png"/>
+    <link rel="shortcut icon" type="image/png" href="images/favicon.ico"/>
     <meta charset="UTF-8">
     <link href='http://fonts.googleapis.com/css?family=Petit+Formal+Script' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" media="screen and (max-width : 320px) " href="css/styleSmall.css">
+    <link rel="stylesheet" type="text/css" media="screen and (min-width : 800px) " href="css/styleBig.css">
     <title>Sejam bem vindos!</title>
 </head>
 <body>
@@ -180,7 +181,7 @@
                                  style="background-image: url(http://graph.facebook.com/luciana.a.delima.9/picture?type=large);">
                             </div>
                             <article class="description">
-                                <p>Luciana Alves de Lima</p>
+                                <p>Luciana Lima</p>
                             </article>
                         </div>
                         <div class="padrinho">
@@ -266,7 +267,7 @@
                     <div class="full__center">
                         <h4>Lista de Presentes</h4>
 
-                        <p style="font-size: 15px;">Ficariamos honrados em receber presentes de pessoas tão especiais,
+                        <p class="description__lista__presente" style="font-size: 15px;">Ficariamos honrados em receber presentes de pessoas tão especiais,
                             elaboramos 3 listas com
                             opções variadas.
                             Para visualizar, basta clicar nas imagens abaixo.</p>
@@ -351,6 +352,11 @@
                                 <br>Localização
                             </li>
                         </ul>
+                        <ul class="lg-only" style="width:100%;">
+                            <li>
+                                <p id="countdown"></p>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -373,12 +379,21 @@
         if ($(window).width() > 800) {
             var s = skrollr.init();
         }
+        var d = new Date("July 25, 2015 18:00:00");
+        var today = new Date();
+        var DateDiff = {
+            inDays: function (d1, d2) {
+                var t2 = d2.getTime();
+                var t1 = d1.getTime();
+
+                return parseInt((t2 - t1) / (24 * 3600 * 1000));
+            }
+        }
+        $('#countdown').html("Faltam " + DateDiff.inDays(today,d) + " dias");
     });
 
     var cards = $(".padrinho");
-    console.log(cards.length)
     for (var i = 0; i < cards.length; i++) {
-        console.log("yup");
         var target = Math.floor(Math.random() * cards.length - 1) + 1;
         var target2 = Math.floor(Math.random() * cards.length - 1) + 1;
         cards.eq(target).before(cards.eq(target2));

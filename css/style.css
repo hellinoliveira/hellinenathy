@@ -3,7 +3,6 @@ body, html {
     padding: 0;
     width: 100%;
     height: 100%;
-    /*overflow-x: hidden;*/
 }
 
 body {
@@ -24,19 +23,6 @@ ul {
     list-style: none;
     padding: 0;
     margin: 0;
-}
-
-/*
- *
- * Common
- *
- */
-
-.news__more {
-    float: right;
-    font-size: .8em;
-    color: #333;
-    text-decoration: none;
 }
 
 /*
@@ -69,6 +55,7 @@ ul {
     width: 90%;
     text-align: center;
 }
+
 .header__title, .description {
     font-family: "Petit Formal Script";
 }
@@ -176,6 +163,7 @@ main {
 }
 
 .padrinho_pic {
+    background-size: cover;
     width: 150px;
     height: 150px;
     padding-top: 1em;
@@ -209,19 +197,21 @@ main {
     text-align: center;
 }
 
-.casamento h4, .presentes h4{
+.casamento h4, .presentes h4 {
     font-size: 18px;
 }
-.presente{
-    height: 150px
-;
+
+.presente {
+    height: 150px;
 }
+
 .casamento, .presentes {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
 }
-.casamento{
+
+.casamento {
     margin: 2em 1em 1em;
 }
 
@@ -346,6 +336,7 @@ main {
     background-position: 0 0;
     /*transform: rotate(20deg);*/
 }
+
 .presenca:hover {
     background-position: 0 -48px;
 }
@@ -355,7 +346,6 @@ main {
     height: 48px;
     background: url(//badges.instagram.com/static/images/ig-badge-sprite-48.png) no-repeat 0 0;
 }
-
 
 .hi-icon-effect-8 .hi-icon {
     /*background: rgba(255,255,255,0.1);*/
@@ -369,7 +359,7 @@ main {
     left: 0;
     padding: 0;
     z-index: -1;
-    box-shadow: 0 0 0 2px rgba(255,255,255,0.1);
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1);
     opacity: 0;
     -webkit-transform: scale(0.9);
     -moz-transform: scale(0.9);
@@ -392,15 +382,16 @@ main {
     animation: sonarEffect 1.3s ease-out 75ms;
 }
 
+.tokstok {
+    background: url('../images/TOKSTOK.png') no-repeat 50% center;
+}
 
-.tokstok{
-    background: url('../images/TOKSTOK.png') no-repeat 50% center ;
+.ponto-frio {
+    background: url('../images/pontofrio.png') no-repeat 50% center;
 }
-.ponto-frio{
-    background: url('../images/pontofrio.png') no-repeat 50% center ;
-}
-.mgluiza{
-    background: url('../images/mgluiza.jpg') no-repeat 50% center ;
+
+.mgluiza {
+    background: url('../images/mgluiza.jpg') no-repeat 50% center;
 }
 
 @-webkit-keyframes sonarEffect {
@@ -409,38 +400,40 @@ main {
     }
     40% {
         opacity: 0.5;
-        box-shadow: 0 0 0 2px rgba(255,255,255,0.1), 0 0 10px 10px #3851bc, 0 0 0 10px rgba(255,255,255,0.5);
+        box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #3851bc, 0 0 0 10px rgba(255, 255, 255, 0.5);
     }
     100% {
-        box-shadow: 0 0 0 2px rgba(255,255,255,0.1), 0 0 10px 10px #3851bc, 0 0 0 10px rgba(255,255,255,0.5);
+        box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #3851bc, 0 0 0 10px rgba(255, 255, 255, 0.5);
         -webkit-transform: scale(1.5);
         opacity: 0;
     }
 }
+
 @-moz-keyframes sonarEffect {
     0% {
         opacity: 0.3;
     }
     40% {
         opacity: 0.5;
-        box-shadow: 0 0 0 2px rgba(255,255,255,0.1), 0 0 10px 10px #3851bc, 0 0 0 10px rgba(255,255,255,0.5);
+        box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #3851bc, 0 0 0 10px rgba(255, 255, 255, 0.5);
     }
     100% {
-        box-shadow: 0 0 0 2px rgba(255,255,255,0.1), 0 0 10px 10px #3851bc, 0 0 0 10px rgba(255,255,255,0.5);
+        box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #3851bc, 0 0 0 10px rgba(255, 255, 255, 0.5);
         -moz-transform: scale(1.5);
         opacity: 0;
     }
 }
+
 @keyframes sonarEffect {
     0% {
         opacity: 0.3;
     }
     40% {
         opacity: 0.5;
-        box-shadow: 0 0 0 2px rgba(255,255,255,0.1), 0 0 10px 10px #3851bc, 0 0 0 10px rgba(255,255,255,0.5);
+        box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #3851bc, 0 0 0 10px rgba(255, 255, 255, 0.5);
     }
     100% {
-        box-shadow: 0 0 0 2px rgba(255,255,255,0.1), 0 0 10px 10px #3851bc, 0 0 0 10px rgba(255,255,255,0.5);
+        box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #3851bc, 0 0 0 10px rgba(255, 255, 255, 0.5);
         transform: scale(1.5);
         opacity: 0;
     }
@@ -515,7 +508,7 @@ main {
 }
 
 @media screen and (max-width: 800px) {
-    .mb-only{
+    .mb-only {
         margin-top: -15px;
     }
 
@@ -526,166 +519,9 @@ main {
     .casamento div, .presente {
         padding-left: 6px;
     }
-    .presentes{
+
+    .presentes {
         display: none;
-    }
-}
-
-@media screen and (min-width: 800px) {
-    .hero {
-        width: inherit;
-        position: inherit;
-        height: inherit;
-        background: url("../images/kiss_waterfall_HD-compressed.jpg") center center /cover no-repeat;
-    }
-
-    .about__noivos h4 {
-        font-size: 2em;
-    }
-
-    .padrinho_pic:hover {
-        -webkit-transform: scale(1.3);
-        -moz-transform: scale(1.3);
-        -o-transform: scale(1.3);
-        transform: scale(1.3);
-    }
-
-    .lg-only {
-        display: inline-block;
-    }
-
-    /* full width/height container */
-    #slides-container {
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-    }
-
-    /* double the height/width of a viewport */
-    #slides {
-        width: 200%;
-        height: 200%;
-        position: fixed;
-        top: 0;
-        left: 0;
-    }
-
-    .slide {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 50%;
-        height: 50%;
-    }
-
-    #slide-1 {
-
-    }
-
-    #slide-2 {
-        background-size: cover;
-        -webkit-transform: translate(0, 100%);
-        -ms-transform: translate(0, 100%);
-        transform: translate(0, 100%);
-    }
-    #slide-2 .caption {
-       background-color: transparent;
-        bottom: inherit;
-    }
-    #slide-3 {
-        background-size: cover;
-        -webkit-transform: translate(0, 200%);
-        -ms-transform: translate(0, 200%);
-        transform: translate(0, 200%);
-    }
-
-    #slide-3 .caption {
-        left: 5%;
-        right: auto;
-        color: #47373f;
-    }
-
-    #slide-4 {
-        background-size: cover;
-        -webkit-transform: translate(0, 300%);
-        -ms-transform: translate(0, 300%);
-        transform: translate(0, 300%);
-    }
-
-    #slide-4 .caption {
-        /*right: auto;*/
-        /*left: 5%;*/
-        /*top: 5%;*/
-        /*bottom: auto;*/
-        /*color: #47373f;*/
-    }
-
-    #slide-5 {
-        background-size: cover;
-        -webkit-transform: translate(0, 400%);
-        -ms-transform: translate(0, 400%);
-        transform: translate(0, 400%);
-    }
-
-    #helper {
-        position: absolute;
-        left: 0;
-        top: 0;
-        height: 500%;
-        width: 0;
-    }
-
-    .footer {
-        display: inherit;
-        flex-wrap: inherit;
-    }
-
-    .marker {
-        height: 20%;
-        width: 100%;
-    }
-
-    .red {
-        background-color: red;
-    }
-
-    .green {
-        background-color: green;
-    }
-
-    .blue {
-        background-color: blue;
-    }
-
-    .yellow {
-        background-color: yellow;
-    }
-
-    video {
-        position: fixed;
-        right: 0;
-        min-width: 100%;
-        min-height: 100%;
-        width: auto;
-        height: auto;
-        z-index: -100;
-        background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
-        background-size: cover;
-        transition: 1s opacity;
-    }
-
-    #contato {
-        /*background: rgba(0, 0, 0, 0.3);*/
-        color: white;
-        font-size: 1.2rem;
-        font-weight: 100;
-        padding: 2rem;
-        margin: 2rem;
-    }
-
-    #contato div {
-        width: 50%;
-        float: right;
     }
 }
 
@@ -695,6 +531,51 @@ main {
     }
 
 }
+
+@media screen and (max-height: 530px) {
+    .padrinhos__album div {
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+
+    .padrinho_pic {
+        width: 100px;
+        height: 100px;
+        border-radius: 55px;
+    }
+
+    .padrinho .description {
+        white-space: nowrap;
+        width: 100px;
+    }
+
+    .love, .about__noivos {
+        font-size: 10px;
+    }
+
+    .about__noivos p, .about__noivos h4 {
+        margin: 0.5em;
+    }
+
+    .mgluiza {
+        background-position: 50% bottom;
+    }
+
+    .presente {
+        height: 57px;
+    }
+
+    .description__lista__presente {
+        margin-bottom: 0;
+        margin-top: 5px;
+    }
+
+    .casamento img {
+        width: 100px;
+    }
+
+}
+
 
 
 
