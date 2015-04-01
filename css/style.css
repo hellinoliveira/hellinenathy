@@ -284,7 +284,7 @@ main {
 
 .footer li {
     display: inline-block;
-    margin: 0 6px;
+    margin: 0 1%;
 }
 
 .footer a {
@@ -530,6 +530,11 @@ main {
         padding-left: 50px;
     }
 
+}
+@media screen and (max-width: 380px){
+    .casamento__container{
+        overflow-x: hidden;
+    }
 }
 
 @media screen and (max-height: 530px) {
