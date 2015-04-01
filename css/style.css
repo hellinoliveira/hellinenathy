@@ -537,7 +537,7 @@ main {
     }
 }
 
-@media screen and (max-height: 530px) {
+@media screen and (max-height: 530px) and (min-width: 700px) {
     .padrinhos__album div {
         padding-left: 45px;
         padding-right: 45px;
