@@ -148,7 +148,10 @@ main {
 }
 
 .padrinhos__album {
+    display: -webkit-flex;
     display: flex;
+    -webkit-flex-flow: row wrap;
+    -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
     width: 100%;
 }
@@ -207,7 +210,9 @@ main {
 
 .casamento, .presentes {
     width: 100%;
+    display: -webkit-flex;
     display: flex;
+    -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 
@@ -237,7 +242,9 @@ main {
 #casamento__local {
     padding-left: 0;
     width: 100%;
+    display: -webkit-flex;
     display: flex;
+    -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 
@@ -247,6 +254,9 @@ main {
 
 #casamento__local div img {
     width: 100%;
+}
+.cerimonia__descricao{
+    font-size: 13px;
 }
 
 /*
@@ -272,7 +282,9 @@ main {
 .footer {
     background-color: #E5FCC2;
     border-top: 1px solid #E0E0E0;
+    display: -webkit-flex;
     display: flex;
+    -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
     width: 100%;
 }
@@ -458,7 +470,9 @@ main {
     }
 
     .about {
+        display: -webkit-flex;
         display: flex;
+        -webkit-flex-wrap: wrap;
         flex-wrap: wrap;
         width: 100%;
     }

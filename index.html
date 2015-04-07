@@ -14,6 +14,14 @@
     <title>Sejam bem vindos!</title>
 </head>
 <body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 <!--<header class="header">-->
     <!--<div class="header__inner">-->
         <!--<h1 class="header__title">-->
@@ -292,27 +300,36 @@
                         <img src="images/5456-200.png" alt="cerimonia"/>
 
                         <h3>Cerimônia <span>17:30</span></h3>
-                        <h4><a target="_blank" href="http://www.bellaeventosgoiania.com.br/site/"> Bella Eventos </a>
-                        </h4>
-                        <p>O casal realizará a troca de alianças às 17:30pm.</p>
+                        <!--<h4><a target="_blank" href="http://www.bellaeventosgoiania.com.br/site/"> Bella Eventos </a>-->
+                        <!--</h4>-->
+                        <p class="cerimonia__descricao">A Entrada da noiva acontece por volta das 17h30. <br>O casal realizará a troca de alianças às 18h.</p>
                     </div>
                     <div class="casamento__ casamento__festa">
-                        <img src="images/80611-200.png" alt="festa"/>
+                        <img src="images/105603-200.png" alt="festa"/>
 
                         <h3>Festa <span>18:30pm</span></h3>
-                        <h4><a target="_blank" href="http://www.bellaeventosgoiania.com.br/site/"> Bella Eventos </a>
-                        </h4>
+                        <!--<h4><a target="_blank" href="http://www.bellaeventosgoiania.com.br/site/"> Bella Eventos </a>-->
+                        <!--</h4>-->
 
-                        <p>A celebração começa de verdade. Bebidas liberadas e logo depois a pista de dança.</p>
+                        <p class="cerimonia__descricao">A celebração começa de verdade. Bebidas liberadas e logo depois a pista de dança.<br>
+                            - Sucos.<br>
+                            - Refrigerante normal e zero.<br>
+                            - Cerveja Antártica</p>
                     </div>
                     <div class="casamento__ casamento__jantar">
-                        <img src="images/105603-200.png" alt="jantar"/>
+                        <img src="images/80611-200.png" alt="jantar"/>
 
                         <h3>Jantar <span>20:00</span></h3>
-                        <h4><a target="_blank" href="http://www.bellaeventosgoiania.com.br/site/"> Bella Eventos </a>
-                        </h4>
+                        <!--<h4><a target="_blank" href="http://www.bellaeventosgoiania.com.br/site/"> Bella Eventos </a>-->
+                        <!--</h4>-->
 
-                        <p>O jantar será servido. O cardápio é composto por: Salmão e suhi da lua!</p>
+                        <p class="cerimonia__descricao">-Mignon com ervas de Provence e gorgonzola ao molho de vinho tinto.<br>
+
+                            - Arroz com brócolis e Arroz branco.<br>
+
+                            - Salmão na manteiga com alcaparras, palmito, brócolis e amêndoas<br>
+
+                            - Rondelli de ricota com espinafre ao molho de queijo.</p>
                     </div>
                     <!--<div>-->
                     <!--<h3>Localização</h3>-->
@@ -354,6 +371,7 @@
                         <ul class="lg-only" style="width:100%;">
                             <li>
                                 <p id="countdown"></p>
+                                <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button"></div>
                             </li>
                         </ul>
                     </div>
@@ -371,9 +389,16 @@
 </main>
 
 </body>
-<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="js/jquery-1.11.2.min.js"></script>
 <script src="js/skrollr.js"></script>
 <script type="text/javascript">
+    window.addEventListener("orientationchange", function() {
+        if ($(window).width() > 800) {
+            var s = skrollr.init();
+        }else{
+            skrollr.init().destroy();
+        }
+    }, false);
     $(document).ready(function () {
         if ($(window).width() > 800) {
             var s = skrollr.init();
