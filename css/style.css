@@ -27,41 +27,6 @@ ul {
 
 /*
  *
- * Header
- *
- */
-
-.header {
-
-    min-height: 56px;
-    transition: min-height 0.3s;
-}
-
-.header__inner {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #6E0E0E;
-    position: absolute;
-    z-index: 100;
-}
-
-.header__title {
-    color: #ffffff;
-    font-weight: 300;
-    font-size: 4em;
-    margin: 0.5em 0.25em;
-    display: inline-block;
-    width: 90%;
-    text-align: center;
-}
-
-.header__title, .description {
-    font-family: "Petit Formal Script";
-}
-
-/*
- *
  * Main
  *
  */
@@ -126,6 +91,7 @@ main {
 
 .love {
     padding-bottom: 20px;
+    width: 100%;
 }
 
 .love, .about__noivos {
@@ -136,6 +102,7 @@ main {
 .love p, .about__noivos p {
     text-align: center;
     font-size: 1.4em;
+    line-height: 1.2em;
 }
 
 /*
@@ -239,22 +206,6 @@ main {
     display: none;
 }
 
-#casamento__local {
-    padding-left: 0;
-    width: 100%;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-wrap: wrap;
-    flex-wrap: wrap;
-}
-
-#casamento__local div {
-    width: 50%;
-}
-
-#casamento__local div img {
-    width: 100%;
-}
 .cerimonia__descricao{
     font-size: 13px;
 }
@@ -264,11 +215,6 @@ main {
  * Lojas
  *
  */
-.presentes__logo {
-    height: 60px;
-    width: 60px;
-}
-
 .lojas {
     width: 100%;
     height: 100%;
@@ -287,7 +233,11 @@ main {
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
     width: 100%;
+    position: relative;
+    background: url("../images/DSC01825.JPG") bottom center /cover no-repeat;
+    height: 100vh;
 }
+
 
 .footer ul {
     margin: 0 auto;
@@ -307,10 +257,6 @@ main {
 
 .ig-b- {
     display: inline-block;
-}
-
-.ig-b- img {
-    visibility: hidden;
 }
 
 .ig-b-:hover {
@@ -512,13 +458,6 @@ main {
     .casamento div, .presente {
         width: 33%;
     }
-
-    .header__title {
-        width: 100%;
-        margin-left: 0;
-        margin-right: 0;
-    }
-
 }
 
 @media screen and (max-width: 800px) {

@@ -65,12 +65,6 @@
     transform: translate(0, 200%);
 }
 
-#slide-3 .caption {
-    left: 5%;
-    right: auto;
-    color: #47373f;
-}
-
 #slide-4 {
     background-size: cover;
     -webkit-transform: translate(0, 300%);
