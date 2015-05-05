@@ -125,7 +125,7 @@ main {
 
 .padrinhos__album div {
     padding-left: 6%;
-    padding-right: 0px;
+    padding-right: 0;
 }
 
 .padrinhos__album p {
@@ -206,7 +206,7 @@ main {
     display: none;
 }
 
-.cerimonia__descricao{
+.cerimonia__descricao {
     font-size: 13px;
 }
 
@@ -221,10 +221,6 @@ main {
     display: block;
 }
 
-#contato {
-    width: 100%;
-}
-
 .footer {
     background-color: #E5FCC2;
     border-top: 1px solid #E0E0E0;
@@ -234,10 +230,8 @@ main {
     flex-wrap: wrap;
     width: 100%;
     position: relative;
-    background: url("../images/DSC01825.JPG") bottom center /cover no-repeat;
-    height: 100vh;
+    /*height: 100vh;*/
 }
-
 
 .footer ul {
     margin: 0 auto;
@@ -352,49 +346,24 @@ main {
     background: url('../images/mgluiza.jpg') no-repeat 50% center;
 }
 
-@-webkit-keyframes sonarEffect {
-    0% {
-        opacity: 0.3;
-    }
-    40% {
-        opacity: 0.5;
-        box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #3851bc, 0 0 0 10px rgba(255, 255, 255, 0.5);
-    }
-    100% {
-        box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #3851bc, 0 0 0 10px rgba(255, 255, 255, 0.5);
-        -webkit-transform: scale(1.5);
-        opacity: 0;
-    }
+/* Flexible iFrame */
+
+.Flexible-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
 }
 
-@-moz-keyframes sonarEffect {
-    0% {
-        opacity: 0.3;
-    }
-    40% {
-        opacity: 0.5;
-        box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #3851bc, 0 0 0 10px rgba(255, 255, 255, 0.5);
-    }
-    100% {
-        box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #3851bc, 0 0 0 10px rgba(255, 255, 255, 0.5);
-        -moz-transform: scale(1.5);
-        opacity: 0;
-    }
-}
-
-@keyframes sonarEffect {
-    0% {
-        opacity: 0.3;
-    }
-    40% {
-        opacity: 0.5;
-        box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #3851bc, 0 0 0 10px rgba(255, 255, 255, 0.5);
-    }
-    100% {
-        box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #3851bc, 0 0 0 10px rgba(255, 255, 255, 0.5);
-        transform: scale(1.5);
-        opacity: 0;
-    }
+.Flexible-container iframe,
+.Flexible-container object,
+.Flexible-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
@@ -474,7 +443,7 @@ main {
     }
 
     .presentes {
-        display: none;
+        /*display: none;*/
     }
 }
 
@@ -484,8 +453,9 @@ main {
     }
 
 }
-@media screen and (max-width: 380px){
-    .casamento__container{
+
+@media screen and (max-width: 380px) {
+    .casamento__container {
         overflow-x: hidden;
     }
 }
@@ -533,7 +503,3 @@ main {
     }
 
 }
-
-
-
-
