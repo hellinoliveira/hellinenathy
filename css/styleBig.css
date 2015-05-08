@@ -147,9 +147,10 @@
 #confirmacao{
     display: block;
     margin-bottom: 1rem;
+    text-align: center;
 }
 #confirmacao:before{
-    content: 'Confirme sua presença antes de 10/07';
+    /*content: 'Confirme sua presença antes de 10/07';*/
 }
 .confirme{
     display: none;
