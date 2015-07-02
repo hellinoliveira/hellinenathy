@@ -352,8 +352,11 @@ main {
 .mgluiza {
     background: url('../images/mgluiza.jpg') no-repeat 50% center;
 }
+.americanas {
+    background: url('../images/americanas.png') no-repeat 50% center;
+}
 
-/* Flexible iFrame */
+    /* Flexible iFrame */
 
 .Flexible-container {
     position: relative;
