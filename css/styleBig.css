@@ -134,7 +134,7 @@
 }
 
 .footer:after{
-    background: url("../images/rosario.jpg") bottom center /cover no-repeat;
+    background: url("../images/chabar.jpg") bottom center /100% 100% no-repeat;
     content: "";
     /*opacity: 0.4;*/
     top: 0;
