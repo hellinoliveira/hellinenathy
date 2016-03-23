@@ -524,11 +524,10 @@ main {
 }
 
 .btn.red {
-    background-color: #C02942;
+    background-color: transparent;
 }
 
 .btn.red:hover, .btn.red:focus {
-    background-color: #c0392b;
 }
 /**************************************/
 }
